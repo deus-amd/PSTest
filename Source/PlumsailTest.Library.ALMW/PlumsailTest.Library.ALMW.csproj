@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>ef.ico</ApplicationIcon>
+    <BaseOutputPath>..\..\.efdata\builds\core</BaseOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <Description>$(AssemblyName)</Description>
+    <Copyright>ElderForge.Net</Copyright>
+    <PackageProjectUrl>ElderForge.Net</PackageProjectUrl>
+    <PackageIcon>ef.png</PackageIcon>
+    <Version>2023.1130.941.1</Version>
+    <Authors>ElderForge.Net</Authors>
+    <Company>ElderForge.Net</Company>
+    <RepositoryUrl>ElderForge.Net</RepositoryUrl>
+    <PackageTags>ElderForge.Net</PackageTags>
+    <AssemblyVersion>2024.0214.1123.30</AssemblyVersion>
+    <FileVersion>2024.0214.1123.30</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="X\ResharperHackForArchitectureMap.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ef.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CL\" />
+    <Folder Include="Configs\" />
+    <Folder Include="Content\" />
+    <Folder Include="DAL\" />
+    <Folder Include="I\" />
+    <Folder Include="SAL\" />
+    <Folder Include="SL\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\.efdata\content\Images\core\ef.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

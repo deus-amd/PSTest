@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Data", "1.Data", "{30BBA4D3-124E-4ADE-951B-BED1662DB89C}"
+	ProjectSection(SolutionItems) = preProject
+		Data\data.json = Data\data.json
+		Data\output.html = Data\output.html
+		Data\template.html = Data\template.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Platform", "2.Platform", "{D0DA747A-4D79-46F6-B7D6-9AE407E3CE5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Applications", "3.Applications", "{51FA4DEF-2A11-4EFC-BD7B-4E2CB7F1EC6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2.Tools", "3.2.Tools", "{CE21CF10-0CCD-4385-8863-8554995DDDAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlumsailTest.ConsoleCore.App.UI.LMW", "Source\PlumsailTest.ConsoleCore.App.UI.LMW\PlumsailTest.ConsoleCore.App.UI.LMW.csproj", "{CD7A8F67-8E8A-40BE-9947-CA742B25743F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1.Core", "2.1.Core", "{F9A5CAE6-9D38-475A-B823-F9372CC1CC5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlumsailTest.Library.ALMW", "Source\PlumsailTest.Library.ALMW\PlumsailTest.Library.ALMW.csproj", "{40C9DFDF-34A9-44A4-B7D6-4EF5589C2B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{7B63E2F7-5880-47C3-A695-E599297F7E09}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		Doc\Test task for C# .NET developer - Templater.pdf = Doc\Test task for C# .NET developer - Templater.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.SandBox", "4.SandBox", "{CD03ACCE-BB5E-4E75-9CFE-0C3F8FB5F563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlumsailTest.MSTest.Tests.LMW", "Source\PlumsailTest.MSTest.Tests.LMW\PlumsailTest.MSTest.Tests.LMW.csproj", "{6BCA5059-28F2-4B3B-A08A-17D762209EFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD7A8F67-8E8A-40BE-9947-CA742B25743F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7A8F67-8E8A-40BE-9947-CA742B25743F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7A8F67-8E8A-40BE-9947-CA742B25743F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7A8F67-8E8A-40BE-9947-CA742B25743F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C9DFDF-34A9-44A4-B7D6-4EF5589C2B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C9DFDF-34A9-44A4-B7D6-4EF5589C2B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C9DFDF-34A9-44A4-B7D6-4EF5589C2B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C9DFDF-34A9-44A4-B7D6-4EF5589C2B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCA5059-28F2-4B3B-A08A-17D762209EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCA5059-28F2-4B3B-A08A-17D762209EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCA5059-28F2-4B3B-A08A-17D762209EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCA5059-28F2-4B3B-A08A-17D762209EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE21CF10-0CCD-4385-8863-8554995DDDAF} = {51FA4DEF-2A11-4EFC-BD7B-4E2CB7F1EC6E}
+		{CD7A8F67-8E8A-40BE-9947-CA742B25743F} = {CE21CF10-0CCD-4385-8863-8554995DDDAF}
+		{F9A5CAE6-9D38-475A-B823-F9372CC1CC5B} = {D0DA747A-4D79-46F6-B7D6-9AE407E3CE5A}
+		{40C9DFDF-34A9-44A4-B7D6-4EF5589C2B18} = {F9A5CAE6-9D38-475A-B823-F9372CC1CC5B}
+		{6BCA5059-28F2-4B3B-A08A-17D762209EFE} = {CD03ACCE-BB5E-4E75-9CFE-0C3F8FB5F563}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C51A2C7-D8AE-4ED7-86C4-71AC72D055ED}
+	EndGlobalSection
+EndGlobal

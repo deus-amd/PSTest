@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <AssemblyVersion>2024.0214.1158.66</AssemblyVersion>
+    <FileVersion>2024.0214.1158.66</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\Data\data.json" Link="Data\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Data\template.html" Link="Data\template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.0.4" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.0.4" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Formatting.Compact" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlumsailTest.ConsoleCore.App.UI.LMW\PlumsailTest.ConsoleCore.App.UI.LMW.csproj" />
+    <ProjectReference Include="..\PlumsailTest.Library.ALMW\PlumsailTest.Library.ALMW.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+</Project>

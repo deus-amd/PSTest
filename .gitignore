@@ -1,0 +1,4 @@
+/.vs/
+/Source/*/bin/
+/.efdata/builds/
+/Source/*/obj/
