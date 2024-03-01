@@ -27,7 +27,6 @@ public sealed class FilesPathsModel
         Log(logger);
     }
 
-    /// <exception cref="ArgumentOutOfRangeException">Start Console application with parameters: "templateFilePath", dataFilePath, outputFilePath</exception>
     public FilesPathsModel(IReadOnlyList<string> args, ILogger logger)
     {
         DataFilePath = args[1];

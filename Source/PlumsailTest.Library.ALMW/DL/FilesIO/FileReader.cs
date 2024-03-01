@@ -27,7 +27,6 @@ public sealed class FileReader : IFileReader
         var buffer = new byte[fileStream.Length];
 
         await fileStream.ReadAsync(buffer, 0, (int)fileStream.Length).ConfigureAwait(false);
-
         fileStream.Close();
 
         return Encoding.UTF8.GetString(buffer);

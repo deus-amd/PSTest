@@ -8,6 +8,7 @@ namespace PlumsailTest.ConsoleCore.App.UI.LMW.App_Start;
 
 public class DIConfigurator
 {
+    /// <exception cref="ArgumentNullException">When <paramref name="value" /> is <code>null</code></exception>
     public static ServiceProvider Register()
     {
         // AddSingleton - only singleton instance
